@@ -1,5 +1,8 @@
 # ISO Auto-XML Builder
-
+## Imagen de Muestra / Sample Image
+<p align="center">
+<a href=></a><img src="https://github.com/mggons93/ISO_Creator_Unattend/blob/main/Captura.PNG"/>
+</p>
 **ISO Auto-XML Builder** es una herramienta gráfica en Python diseñada para modificar imágenes ISO de Windows automatizando el proceso de inyección de archivos `autounattend.xml` y, opcionalmente, la inclusión de controladores SSD/NVMe (Intel IRST) de forma transparente para el usuario.
 
 ## 🧩 Características principales
@@ -14,16 +17,18 @@
 - 🧹 Limpieza automática de archivos y carpetas temporales
 
 ## 🧰 Requisitos
-
 - Windows 10 u 11
-- Python 3.9 o superior
-- Dependencias Python:
-  - `requests`
-  - `tkinter` (incluido en la mayoría de instalaciones de Python en Windows)
 
-## 📥 Instalación
+##  🚀 ¿Cómo funciona?
+- Al abrir la aplicación, se solicita seleccionar una imagen ISO de Windows.
 
-1. Asegúrate de tener Python instalado.
-2. Descarga o clona este repositorio.
-3. Ejecuta el script principal:
+Puedes marcar la opción "Incluir drivers SSD/NVMe" si deseas integrar los controladores Intel IRST.
 
+## 🛠️La herramienta:
+- Monta la ISO en segundo plano (usando PowerShell).
+- Copia todos los archivos a una carpeta temporal.
+- Descarga o usa el archivo autounattend.xml si no está presente.
+- Si activaste los drivers, descargará y extraerá el archivo ZIP en drivers/ dentro de la ISO.
+- Utiliza oscdimg.exe para generar una nueva ISO booteable.
+- Muestra el progreso en tiempo real.
+- La nueva ISO modificada se guarda en la carpeta ISOS_GENERADAS.
