@@ -9,7 +9,7 @@
 
 ## 🧩 Características principales
 
-- 🖼️ Interfaz gráfica simple y amigable (Tkinter)
+- 🖼️ Interfaz gráfica simple y amigable
 - 🔄 Monta automáticamente ISOs de Windows
 - 📂 Copia todo el contenido de la ISO original a una carpeta temporal
 - 📄 Inserta el archivo `autounattend.xml` (local o descargado desde GitHub)
